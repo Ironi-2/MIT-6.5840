@@ -1,0 +1,25 @@
+# 嵌套 git 仓库的备份（原 MIT 上游仓库元数据，不上传）
+**/.git.mit-backup/
+
+# Go 编译产物
+*.so
+*.exe
+*.test
+*.out
+
+# MIT MapReduce/Raft 实验编译出的二进制（无扩展名可执行文件）
+LEC*/lab/src/main/mrcoordinator
+LEC*/lab/src/main/mrworker
+LEC*/lab/src/main/mrsequential
+LEC*/lab/src/main/mrcoordinator_win
+LEC*/lab/src/main/mrworker_win
+LEC*/lab/src/main/mrsequential_win
+
+# 运行时临时目录与输出
+**/mr-tmp-*/
+**/mr-tmp-test/
+**/*.log
+
+# Python 缓存等
+__pycache__/
+*.pyc
